@@ -93,7 +93,7 @@ public class Boards
         }
         return str;
     }
-    public void spawn()
+    public void space()
     {
         boolean empty = true;
         while ( empty )
