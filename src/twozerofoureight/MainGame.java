@@ -36,29 +36,29 @@ public class MainGame extends JPanel implements KeyListener {
         else if ( e.getKeyChar() == '2' || e.getKeyCode() == KeyEvent.VK_DOWN )
         {
             game.down();
-            game.spawn();
+            game.space();
             gameBoard = game.toString();
             frame.repaint();
         }
         else if ( e.getKeyChar() == '3' || e.getKeyCode() == KeyEvent.VK_LEFT )
         {
             game.left();
-            game.spawn();
+            game.space();
             gameBoard = game.toString();
             frame.repaint();
         }
         else if ( e.getKeyChar() == '4' || e.getKeyCode() == KeyEvent.VK_RIGHT )
         {
             game.right();
-            game.spawn();
+            game.space();
             gameBoard = game.toString();
             frame.repaint();
         }
         else if ( e.getKeyCode() == KeyEvent.VK_ENTER )
         {
             game = new Boards();
-            game.spawn();
-            game.spawn();
+            game.space();
+            game.space();
             frame.repaint();
         }
     }
